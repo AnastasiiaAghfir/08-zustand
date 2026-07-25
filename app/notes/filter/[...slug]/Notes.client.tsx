@@ -10,7 +10,6 @@ import SearchBox from '@/components/SearchBox/SearchBox';
 import { useDebounce } from 'use-debounce';
 import { fetchNotes } from '@/lib/api';
 import { useState } from 'react';
-import { log } from 'console';
 
 type NotesClientProps = {
   tag: string | undefined;
