@@ -4,6 +4,17 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: '404 - Page not found | NoteHub',
   description: 'This page does not exist or has been moved.',
+  openGraph: {
+    title: '404 - Page not found | NoteHub',
+    description: 'This page does not exist or has been moved.',
+    url: 'https://08-zustand-seven-bice-56.vercel.app/',
+    images: {
+      url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
+      width: '1200',
+      height: '630',
+      alt: '404 - Page not found | NoteHub',
+    },
+  },
 };
 export default function NotFound() {
   return (
