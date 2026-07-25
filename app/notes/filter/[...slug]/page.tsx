@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { fetchNotes } from '@/lib/api';
 import {
   QueryClient,
@@ -10,6 +11,15 @@ type Props = {
   params: Promise<{ slug: string[] }>;
 };
 
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const tag = slug[0] === 'all' ? 'All Tags' : slug[0];
+
+  return {
+    title: `Notes - ${tag}`,
+    description: `Browse notes tagged with ${tag}. NoteHub allows you to filter and view notes based on specific tags for better organization.`,
+  };
+}
 export default async function Notes({ params }: Props) {
   const { slug } = await params;
 

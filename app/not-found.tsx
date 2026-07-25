@@ -1,4 +1,10 @@
 import css from '@/app/page.module.css';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '404 - Page not found | NoteHub',
+  description: 'This page does not exist or has been moved.',
+};
 export default function NotFound() {
   return (
     <div className={css.container}>
