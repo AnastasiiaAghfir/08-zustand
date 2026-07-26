@@ -11,12 +11,14 @@ export const metadata: Metadata = {
     description:
       'Quickly create a new note in NoteHub - the efficient app for organizing your thoughts and ideas',
     url: `https://08-zustand-seven-bice-56.vercel.app/notes/filter/action/create`,
-    images: {
-      url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
-      width: '1200',
-      height: '630',
-      alt: 'Create New Note | NoteHub',
-    },
+    images: [
+      {
+        url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
+        width: '1200',
+        height: '630',
+        alt: 'Create New Note | NoteHub',
+      },
+    ],
   },
 };
 

@@ -14,12 +14,14 @@ export const metadata: Metadata = {
     description:
       'A simple and efficient app for creating and organizing your notes.',
     url: 'https://08-zustand-seven-bice-56.vercel.app/',
-    images: {
-      url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
-      width: '1200',
-      height: '630',
-      alt: 'NoteHub -A simple and efficient app for creating and organizing your notes.',
-    },
+    images: [
+      {
+        url: 'https://ac.goit.global/fullstack/react/notehub-og-meta.jpg',
+        width: '1200',
+        height: '630',
+        alt: 'NoteHub -A simple and efficient app for creating and organizing your notes.',
+      },
+    ],
   },
 };
 
